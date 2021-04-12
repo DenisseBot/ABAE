@@ -1,0 +1,158 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+
+<header>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+      <div class="carousel-item active" style="background-image: url('https://www.norte360.cl/wp-content/uploads/2021/03/DSC0047-2-scaled.jpg')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3 class="display-4"></h3>
+          <p class="lead">Sesiones divertidas e interactivas para niños y jovenes con distintas trisomias.</p>
+        </div>
+      </div>
+      <!-- Slide Two - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('https://portal.alemana.cl/wps/wcm/connect/8c80e49e-87dd-410e-9f36-b98b546d4c42/noticia+dskt.jpg?MOD=AJPERES&CACHEID=8c80e49e-87dd-410e-9f36-b98b546d4c42')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3 class="display-4"></h3>
+          <p class="lead">Profesionales dedicados de cada especialidad para ayudar a cada paciente con exito.</p>
+        </div>
+      </div>
+      <!-- Slide Three - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('https://statics-cuidateplus.marca.com/sites/default/files/images/sindrome-de-down.jpg')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3 class="display-4"></h3>
+          <p class="lead">Jovenes y adultos incluidos en un trabajo del cual se sienten orgullosos!</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+  </div>
+</header>
+
+<!-- Page Content -->
+<section class="py-5">
+  <div class="container">
+    <h1 class="font-weight-light"></h1>
+    <p class="lead"></a></p>
+  </div>
+</section>
+
+
+<section data-spy="scroll" data-target=".navbar" data-offset="50">
+<div class="navbar">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#section1">Sedes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#section2">Especialidades</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#section3">Características</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Section 4
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#section41">Link 1</a>
+        <a class="dropdown-item" href="#section42">Link 2</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+</div>
+
+<div id="section1" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:70px">
+  <h1>Sedes</h1><br>
+  <h5>Edudown actualmente cuenta con 4 Centros:</h5><br>
+  <p>Sede San Bernardo<br>
+     San Martin 405, San Bernardo, RM, Chile.<br>
+     Telefono:
+     (562) 28563830<br><br>
+     <img src="{% static 'core/IMG/San-Bernardo.JPG' %}" class="rounded float-start" alt="san-bernardo" height="300" width="410">
+     <hr>
+     Sede Providencia<br>
+     Ricardo Matte Pérez 546<br>
+     Telefono: 
+     (562) 29066726<br></p>
+     <img src="{% static 'core/IMG/Providencia.JPG' %}" class="rounded float-end" alt="sede providencia" height="300" width="410">
+     <hr>
+  <p>La Serena<br>
+     Av. Gabriel Gonzalez Videla 1670, La Serena<br> 
+     Telefono:
+     (051) 2213010<br><br>
+     <img src="{% static 'core/IMG/La serena.JPG' %}" alt="serena" height="300" width="410">
+    <hr>
+    Sede Temuco<br>
+    San Martin 0502 Temuco<br> 
+    Telefono:
+    (452)757842<br></p>
+    <img src="{% static 'core/IMG/Temuco.JPG' %}" alt="temuco" height="300" width="410">
+    <hr>
+</div>
+<div id="section2" class="container-fluid bg-warning" style="padding-top:70px;padding-bottom:70px">
+  <h1>Especialidades</h1>
+  <p>Primera etapa: Programa que ofrece a los bebés y niños menores que aún no han adquirido marcha, sesiones de:</p>
+    <p>-kinesiología.<br>
+       -Talleres de Fonoaudiología.<br>
+       -Educación.</p><br>
+  <p>Segunda etapa: Programa que ofrece a los niños preescolares y escolares sesiones individuales y grupales de:</p>
+    <p>-Educación.<br>
+       -Fonoaudiología.<br>
+       -Psicomotricidad.<br>
+       -Talleres de Computación<br>
+       -Autonomía y Habilidades sociales<br>
+       -<strong>En caso de aquellos que se encuentren integrados a jardines/colegios regulares, se realiza seguimiento escolar con la orientación de un equipo encargado de integración escolar.</strong></p><br>
+   <p>Tercera etapa: Denominada como “Transición a la vida adulta” participan los adolescentes y jóvenes de la institución quienes asisten a sesiones de:</p>
+    <p>-Educación.<br>
+       -Fonoaudiología.<br>
+       -Computación.<br>
+       -Habilidades sociales, <strong>forma integral y todas orientadas a
+       conseguir el máximo de autonomía.</strong></p><br>
+    <p><b>Como visión queremos que las personas con síndrome de Down logren ser autónomas, que utilicen herramientas que
+      potencien sus capacidades y que desarrollen al máximo su proyecto de vida. Que los padres puedan desarrollar estrategias
+      que les permitan apoyar a sus hijos(as) con síndrome de Down, aceptando de éstos su condición. Tenemos profesionales con Especialidades como Psicólogos, Kinesiólogos, Fonoaudiólogos, Educadoras Diferenciales, Terapeutas Ocupacionales, además del área
+      administrativa que estan disponibles ayudar al prójimo en cada seguimiento o etapas del niño o joven quien lo necesite.</b></p><br>   
+</div>
+<div id="section3" class="container-fluid bg-secondary" style="padding-top:70px;padding-bottom:70px">
+  <h1><strong>Nuestras características:</strong></h1><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="{% static 'core/IMG/loginfoto.jpg' %}" alt="foto" height="300" width="600">
+  <h6>Atencion Gratuita</h6>
+  <p><i>Somos una ONG sin fines de lucro que atendemos de manera 100% gratuita a nuestros pacientes, velamos por el buen servicio atencion primordial y afectuosa hacia nuestros pacientes. Nuestro mayor objetivo es “Promover el desarrollo integral de las personas con síndrome de Down con el fin de mejorar su calidad de vida y la de sus familias, desde los primeros años hasta la adultez”. Cuya misión es acompañar a los niños, niñas y jóvenes con síndrome de Down y a sus familias en las distintas etapas del desarrollo en la que se encuentren.</i></p><br>
+  <hr>
+  <h6>Inclusión</h6>
+  <p><i>Tenemos un equipo encargado de la inclusión escolar, social y laboral, facilitando asi la autoestima como tambien el desarrollo motor de niños,jovenes y adultos con distintas capacidades. Consideramos un trabajo formativo, con diferentes cursos y talleres, junto con el apresto laboral que los prepare para el momento de comenzar a trabajar. Luego de estas instancias se comienza con un espacio de práctica y búsqueda de empleos reales, donde la inclusión se realiza a través de la metodología de empleo con apoyo.</i></p>
+</div>
+<div id="section41" class="container-fluid bg-danger" style="padding-top:70px;padding-bottom:70px">
+  <h1>Section 4 Submenu 1</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section42" class="container-fluid bg-info" style="padding-top:70px;padding-bottom:70px">
+  <h1>Section 4 Submenu 2</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+
+</section>
+
+{% endblock %}
